@@ -1,9 +1,5 @@
-import React from "react";
+import React from 'react';
 
-export function ProductCard(){
-    return(
-        <div>
-            Card Items Are shown here
-        </div>
-    )
+export function ProductCard() {
+  return <div>Card Items Are shown here</div>;
 }
