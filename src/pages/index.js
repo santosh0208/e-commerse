@@ -1,17 +1,19 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import { Inter } from 'next/font/google'
-import styles from '@/styles/Home.module.css'
-import DefaultLayout from '@/layouts'
-import HomePage from './homePage'
-import { HeaderSearch } from '@/components/Header'
-//import '../styles/globals.css'
+import { HeaderSearch } from "@/components/Header";
+import { FooterCentered } from "@/components/Footer";
+import React from "react";
+import { Grid } from "@mantine/core";
 
-
-export default function Home() {
-  return (
-    <>
-      <DefaultLayout/>
-    </>
-  )
+export default function Home(){
+    return(
+        <div>
+            <HeaderSearch/>
+            <h1>Home Page</h1>
+            <Grid>
+      <Grid.Col span={4}>1</Grid.Col>
+      <Grid.Col span={4}>2</Grid.Col>
+      <Grid.Col span={4}>3</Grid.Col>
+    </Grid>
+            <FooterCentered/>
+        </div>
+    )
 }

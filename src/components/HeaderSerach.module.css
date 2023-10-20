@@ -28,3 +28,29 @@
       background-color: light-dark(var(--mantine-color-gray-0), var(--mantine-color-dark-6));
     }
   }
+
+  /* HeaderSearch.module.css */
+/* ... (your existing styles) */
+
+/* Style for HoverCard and its Dropdown */
+.HoverCard {
+    position: relative;
+    display: inline-block;
+    margin-right: 20px;
+  }
+  
+  .HoverCard.Dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ccc;
+    padding: 10px;
+    display: none;
+  }
+  
+  .HoverCard:hover .HoverCard.Dropdown {
+    display: block;
+  }
+  
