@@ -38,7 +38,7 @@ export function HeaderSearch() {
                         <Button style={{ marginLeft: '10px', marginRight: '10px' }}>Cart</Button>
                     </Group>
                 </div>
-                <NavLink>
+                <nav>
                 <HoverCard width={280} shadow="md">
                     <HoverCard.Target>
                         <Button variant="subtle" color="dark">
@@ -99,7 +99,7 @@ export function HeaderSearch() {
                         </Button>
                     </HoverCard.Dropdown>
                 </HoverCard>
-            </NavLink>
+            </nav>
             </header>
             
         </>
